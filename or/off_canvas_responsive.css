@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* responsive CSS styles for The Opus Room */
+
+.content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.header_menu {
+	display: none;
+}
+
+.welcome, .news, .upcoming, .new_additions, {
+	order: 10;
+}
+
+@media screen and (max-width: 549px) {
+	.header_logo {
+		height: 48px;
+		margin-right: 0.5em;
+		margin-bottom: 0.5em;
+	}
+	.header_title {
+		margin-left: 0;
+		font-size: 1.5em;
+		vertical-align: bottom;
+	}
+	.nav {
+		z-index: 10;
+		background-color: #99CCFF;
+		width: 300px;
+		position: absolute;
+		/* transform moves drawer off-canvas */
+		-webkit-transform: translate(-300px, 0);
+		transform: translate(-300px, 0);
+		/* optional: animate the drawer */
+		transition: transform 0.3s ease;
+	}
+	.nav.open {
+		-webkit-transform: translate(0,0);
+		transform: translate(0,0);
+	}
+	.nav_item {
+		display: list-item;
+		border-bottom: 1px solid #FFFFFF;
+		width: 100%;
+		text-align: left;
+	}
+	.nav a:hover {
+		color: #333333;
+	}
+	.header_menu {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		padding: 1em;
+	}
+	.header_menu svg {
+		width: 32px;
+		fill: #FFFFFF;
+	}
+}
+
+@media screen and (min-width: 550px) and (max-width: 699px) {
+	.header_logo {
+		margin-bottom: 0.5em;
+	}
+	.header_title {
+		margin-left: 0;
+		font-size: 2.25em;
+		vertical-align: bottom;
+	}
+	.welcome {
+		order: 0;
+		width: 60%;
+	}
+	.news {
+		order: 1;
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.welcome {
+		width: 50%;
+	}
+	.news {
+		order: 1;
+		width: 50%;
+	}
+	.upcoming {
+		order: 2;
+		width: 60%;
+	}
+	.new_additions {
+		order: 3;
+	}
+}
+
+@media screen and (min-width: 961px) {
+	main, .header_inner, .nav, .content {
+		width: 961px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+	
