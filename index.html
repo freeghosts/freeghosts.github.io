@@ -446,6 +446,15 @@
         });
     </script>
 
+    <!-- Fix form reset issue on mobile -->
+    <script type="text/javascript">
+        window.addEventListener("pageshow", (event) => {
+            if (event.persisted) {
+                document.getElementById("contact_form").reset();
+            }
+        });
+    </script>
+
     <!-- Kwes Forms validation rules, spam protection, etc -->
     <script src="https://kwesforms.com/v2/kf-script.js" defer></script>
 
