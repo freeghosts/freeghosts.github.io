@@ -1,0 +1,202 @@
+# robots.txt for https://www.freeghosts.com
+
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+
+# Known to be used for training AI
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+# Common Crawl
+User-agent: CCBot
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+# OpenAI (also blocks ChatGPT-User)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Meta-External Agent
+Disallow: /
+
+User-agent: Meta-ExternalFetcher
+Disallow: /
+
+User-agent: Virtuoso
+Disallow: /
+
+
+# More AI bots 
+# Sourced from: https://github.com/healsdata/ai-training-opt-out/blob/main/robots.txt
+
+# Bytedance
+User-agent: Bytespider
+Disallow: /
+
+# Anthropic
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+User-agent: magpie-crawler
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+# SuSea, Inc.
+User-agent: YouBot
+Disallow: /
+
+
+# One more AI bot
+# Sourced from: https://robotstxt.com/ai
+
+User-agent: ImagesiftBot
+Disallow: /
+
+
+# Known bandwidth hogs
+# Sourced from: https://en.wikipedia.org/robots.txt and 
+# https://simtechdev.com/blog/good-and-bad-bots-to-control-to-save-server-resources-and-improve-performance/
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Related to PetalBot
+User-agent: AspiegelBot	
+Disallow:	
+Crawl-delay: 10
+
+User-agent: DotBot
+Disallow:		
+Crawl-delay: 10
+
+User-agent: fast
+Disallow: /
+
+User-agent: grub-client
+Disallow: /
+
+User-agent: MauiBot
+Disallow: /
+
+User-agent: MJ12Bot
+Disallow: 
+Crawl-delay: 10
+
+User-agent: NPBot
+Disallow: /
+
+# Related to AspiegelBot
+User-agent: PetalBot	
+Disallow:	
+Crawl-delay: 10
+
+User-agent: SEMrushBot
+Disallow: /
+
+
+# Known to be troublesome
+# Sourced from: https://en.wikipedia.org/robots.txt &
+# https://darkvisitors.com/agents
+
+User-agent: Download Ninja
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: HTTrack 3.0
+Disallow: /
+
+User-agent: k2spider
+Disallow: /
+
+User-agent: larbin
+Disallow: /
+
+User-agent: linko
+Disallow: /
+
+User-agent: MSIECrawler
+Disallow: /
+
+# MetaProducts
+User-agent: Offline Explorer
+Disallow: /
+
+User-agent: sitecheck.internetseer.com
+Disallow: /
+
+User-agent: SiteSnagger
+Disallow: /
+
+User-agent: Teleport
+Disallow: /
+
+User-agent: TeleportPro
+Disallow: /
+
+User-agent: WebCopier
+Disallow: /
+
+User-agent: WebReaper
+Disallow: /
+
+User-agent: WebStripper
+Disallow: /
+
+User-agent: WebZIP
+Disallow: /
+
+User-agent: Xenu
+Disallow: /
+
+User-agent: Zealbot
+Disallow: /
+
+User-agent: ZyBORG
+Disallow: /
+
