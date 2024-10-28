@@ -275,10 +275,10 @@ button:focus-visible {
 #contact-sub a:hover, #contact-sub a:active {
 	text-decoration: underline;
 }
-
+/*
 .grecaptcha-badge { 
 	visibility: hidden; 
-}
+}*/
 
 #copyright a {
 	color: var(--blue);
