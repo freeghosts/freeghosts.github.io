@@ -1,5 +1,6 @@
-/* custom styles for freeghosts.com */
+/* Custom CSS for freeghosts.com */
 
+@charset 'UTF-8';
 
 :root {
 	--grey: #262626;
@@ -14,6 +15,16 @@
   font-weight: 400;
   src: url('../fonts/faster-one-v19-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
        url('../fonts/faster-one-v19-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+/* montserrat-latin-wght-normal */
+@font-face {
+  font-family: 'Montserrat Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/montserrat:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 /* media queries */
@@ -46,27 +57,20 @@
   }
 }
 
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.montserrat-main {
+  font-family: 'Montserrat Variable', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200; 
+  font-style: normal;
+}
+
 body {
-	font-family: 'Montserrat', Lucida, Verdana, sans-serif;
-}
-
-section h2, h3, h4, h5, h6, p {
-	font-weight: 300;
-}
-
-footer {
-	background-color: var(--grey);
-	color: #ffffff;
-}
-
-footer a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-footer a:hover {
-	color: var(--blue);
-	text-decoration: none;
+	font-family: 'Montserrat Variable', Lucida, Verdana, sans-serif;
 }
 
 a {
@@ -86,16 +90,26 @@ button:focus-visible {
 	border-radius: 5px;
 }
 
-.responsive {
-	max-width: 100%;
-	height: auto;
+ul {
+	color: var(--grey);
+	font-weight: 300;
 }
 
-.montserrat-main {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200; 
-  font-style: normal;
+ul a {
+	font-weight: 500;
+}
+
+ul a:hover, a:active {
+	color: var(--grey);
+	text-decoration: underline;
+}
+
+ul.no-bullets {
+	list-style-type: none;
+}
+
+sub {
+	font-weight: 300;
 }
 
 .navbar-toggler:focus {
@@ -140,7 +154,7 @@ button:focus-visible {
 
 #main-header h1 {
 	color: var(--blue);
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat Variable', sans-serif;
 	font-weight: 300;
 }
 
@@ -156,17 +170,38 @@ button:focus-visible {
 	margin-top: 0.5em;
 }
 
+section h2, h3, h4, h5, h6, p {
+	font-weight: 300;
+}
+
+section a {
+	color: var(--grey);
+}
+
+.section-title {
+	color: var(--grey);
+}
+
 .section-title a:hover {
 	cursor: text;
-}
-
-#about {
-	background-color: #ffffff;
 	color: var(--grey);
 }
 
-#about a {
+.lead a {
+	font-weight: normal;
+	text-decoration: none;
+	cursor: text;
 	color: var(--grey);
+}
+
+p a {
+	color: var(--grey);
+	font-weight: 500;
+}
+
+p a:hover, a:active {
+	color: var(--grey);
+	text-decoration: underline;
 }
 
 #work {
@@ -246,15 +281,31 @@ button:focus-visible {
 
 #contact {
 	color: var(--grey);
+	font-weight: 300;
 }
 
 #contact a {
 	color: var(--grey);
+	font-weight: 300;
 }
 
 #contact-links a:hover, #contact-links a:active {
 	font-weight: bold;
 	color: var(--blue);
+}
+
+#contact-form-check {
+	font-size: 0.85em;
+	padding-top: 1em;
+	padding-bottom: 1.5em;
+}
+
+#contact-form-check a {
+	font-weight: 500;
+}
+
+#contact-form-check a:hover, a:active {
+	text-decoration: underline;
 }
 
 #contact-btn {
@@ -267,19 +318,31 @@ button:focus-visible {
 	box-shadow: 0 10px 10px 5px rgba(173, 189, 223, 0.5);
 }
 
-#contact-sub a {
-	font-weight: bold;
-	color: #000000;
+footer {
+	background-color: var(--grey);
+	color: #ffffff;
 }
 
-#contact-sub a:hover, #contact-sub a:active {
-	text-decoration: underline;
+footer a {
+	color: #ffffff;
+	text-decoration: none;
 }
-/*
-.grecaptcha-badge { 
-	visibility: hidden; 
+
+footer a:hover, a:active {
+	color: var(--blue);
+	text-decoration: none;
 }
-*/
+
+#footer-links a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#footer-links a:hover, #footer-links a:active {
+	font-weight: normal;
+	color: var(--blue);
+}
+
 #copyright a {
 	color: var(--blue);
 	text-decoration: none;
@@ -290,17 +353,29 @@ button:focus-visible {
 	font-weight: normal;
 }
 
+#social {
+	--bs-nav-link-padding-y: 1em;
+}
 
 
+/* Styles for freeghosts' privacy policy and terms of service */
 
+.privpol-items, .terms-items {
+	scroll-margin-top: 80px;
+}
 
+#privpol-list, #terms-list {
+	font-weight: 300;
+	color: var(--grey);
+}
 
+#privpol-list a, #terms-list a {
+	color: var(--grey);
 
+}
 
-
-
-
-
-
-
-
+#privpol-list a:hover, a:active, #terms-list a:hover, a:active {
+	text-decoration: underline;
+	font-weight: 300;
+	color: var(--grey);
+}
